@@ -40,7 +40,7 @@
             // 
             btnOpen.Location = new Point(12, 12);
             btnOpen.Name = "btnOpen";
-            btnOpen.Size = new Size(75, 23);
+            btnOpen.Size = new Size(84, 23);
             btnOpen.TabIndex = 0;
             btnOpen.Text = "Open File";
             btnOpen.UseVisualStyleBackColor = true;
@@ -48,9 +48,9 @@
             // 
             // btnProcess
             // 
-            btnProcess.Location = new Point(12, 58);
+            btnProcess.Location = new Point(12, 193);
             btnProcess.Name = "btnProcess";
-            btnProcess.Size = new Size(75, 23);
+            btnProcess.Size = new Size(84, 23);
             btnProcess.TabIndex = 1;
             btnProcess.Text = "Generate";
             btnProcess.UseVisualStyleBackColor = true;
@@ -58,9 +58,9 @@
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(12, 96);
+            btnSave.Location = new Point(12, 347);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(75, 23);
+            btnSave.Size = new Size(84, 23);
             btnSave.TabIndex = 2;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = true;
@@ -68,17 +68,17 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(93, 12);
+            richTextBox1.Location = new Point(102, 12);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(695, 426);
+            richTextBox1.Size = new Size(686, 426);
             richTextBox1.TabIndex = 3;
             richTextBox1.Text = "";
             // 
             // btnClearText
             // 
-            btnClearText.Location = new Point(12, 198);
+            btnClearText.Location = new Point(12, 376);
             btnClearText.Name = "btnClearText";
-            btnClearText.Size = new Size(75, 23);
+            btnClearText.Size = new Size(84, 23);
             btnClearText.TabIndex = 4;
             btnClearText.Text = "Clear Text";
             btnClearText.UseVisualStyleBackColor = true;
@@ -86,9 +86,8 @@
             // 
             // checkBox1
             // 
-            checkBox1.AutoEllipsis = true;
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(4, 33);
+            checkBox1.Location = new Point(4, 41);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(92, 19);
             checkBox1.TabIndex = 5;
