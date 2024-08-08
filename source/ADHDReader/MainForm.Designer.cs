@@ -4,7 +4,7 @@
 
 namespace ADHDReader
 {
-    partial class Form1
+    partial class MainForm
     {
 
         private Font customFont = new Font("Arial", 10F);
@@ -114,8 +114,8 @@ namespace ADHDReader
             Controls.Add(btnSave);
             Controls.Add(btnProcess);
             Controls.Add(btnOpen);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "ADHDReader";
+            Text = "ADHDReader";
             ResumeLayout(false);
             PerformLayout();
            
@@ -127,12 +127,11 @@ namespace ADHDReader
 
             foreach (Control control in Controls)
             {
-                // control.Font = customFont;
-
+                
                 if (control is Button button)
                 {
                     button.BackColor = ColorTranslator.FromHtml("#3E3E3E");
-                    button.ForeColor = ColorTranslator.FromHtml("#FFFFFF");
+                    button.ForeColor = ColorTranslator.FromHtml("#a5cfe3");
                     button.FlatStyle = FlatStyle.Flat;
                                       
                     button.FlatAppearance.BorderColor = ColorTranslator.FromHtml("#1A1A1A");
