@@ -1,7 +1,14 @@
-﻿namespace ADHDReader
+﻿
+// Todo: Fon
+
+
+namespace ADHDReader
 {
     partial class Form1
     {
+
+        private Font customFont = new Font("Arial", 10F);
+
         /// <summary>
         ///  Required designer variable.
         /// </summary>
@@ -73,6 +80,7 @@
             richTextBox1.Size = new Size(686, 426);
             richTextBox1.TabIndex = 3;
             richTextBox1.Text = "";
+         
             // 
             // btnClearText
             // 
@@ -110,6 +118,39 @@
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
+           
+        }
+
+        private void ApplyDarkMode()
+        {
+            this.BackColor = ColorTranslator.FromHtml("#08313a");
+
+            foreach (Control control in Controls)
+            {
+                // control.Font = customFont;
+
+                if (control is Button button)
+                {
+                    button.BackColor = ColorTranslator.FromHtml("#3E3E3E");
+                    button.ForeColor = ColorTranslator.FromHtml("#FFFFFF");
+                    button.FlatStyle = FlatStyle.Flat;
+                                      
+                    button.FlatAppearance.BorderColor = ColorTranslator.FromHtml("#1A1A1A");
+                }
+                else if (control is RichTextBox)
+                {
+                    control.BackColor = ColorTranslator.FromHtml("#107869");
+                    control.ForeColor = ColorTranslator.FromHtml("#a5cfe3");
+                    control.Font = customFont;
+                }
+                else if (control is Label)
+                {
+                    control.ForeColor = ColorTranslator.FromHtml("#FFFFFF");
+                }
+            }
+
+
+
         }
 
         #endregion

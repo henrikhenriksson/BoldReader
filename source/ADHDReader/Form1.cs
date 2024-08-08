@@ -7,6 +7,7 @@ namespace ADHDReader
         public Form1()
         {
             InitializeComponent();
+            ApplyDarkMode();
         }
 
         private void btnOpen_Click(object sender, EventArgs e)
@@ -51,7 +52,7 @@ namespace ADHDReader
 
             if (string.IsNullOrWhiteSpace(word))
             {
-                richTextBox1.AppendText(word); // Add whitespace or newline as is
+                richTextBox1.AppendText(word); // Add whitespace or newline
                 return;
             }
 
@@ -112,5 +113,7 @@ namespace ADHDReader
         {
 
         }
+
+   
     }
 }
